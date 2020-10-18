@@ -40,7 +40,11 @@ jobs:
         name: webpack artifacts
         path: public
     - name: npm install, and test
-      
+      run: |	
+        npm install	
+        npm test	
+      env:	
+        CI: true 
 
  
         
